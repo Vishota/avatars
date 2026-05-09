@@ -1,0 +1,28 @@
+{
+  "name": "avatars",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/seed-avatar.cjs",
+  "module": "./dist/seed-avatar.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/seed-avatar.js",
+      "require": "./dist/seed-avatar.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  }
+}
+
